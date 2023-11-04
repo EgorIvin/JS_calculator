@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calc.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link type="image/x-icon" href="/image/fav.png" rel="shortcut icon" />
+  </head>
+  <body>
+    <div class="centered-element">
+      <p>Calc</p>
+    </div>
+    <div class="container">
+      <input class="input1" placeholder="Number" />
+      <input class="input2" placeholder="Number" />
+
+      <div class="buttons">
+        <button class="multiply" onclick="submitForm(event)">x</button>
+        <button class="sum" onclick="submitForm(event)">+</button>
+        <button class="minus" onclick="submitForm(event)">-</button>
+        <button class="divide" onclick="submitForm(event)">:</button>
+      </div>
+
+      <div class="panel"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -14,7 +14,7 @@ function submitForm(event) {
     switch (operation) {
       case "x":
         res = input1 * input2;
-        document.querySelector(".panel").innerText = res;
+        document.querySelector(".panel").innerText = res.toFixed(2);
         break;
       case "+":
         res = input1 + input2;

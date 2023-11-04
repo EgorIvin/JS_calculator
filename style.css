@@ -1,0 +1,90 @@
+body {
+  background: url(image/backgound.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.input1 {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 300px;
+  margin: 2px;
+}
+
+.input2 {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 300px;
+  margin: 2px;
+}
+
+.centered-element {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  width: 20rem;
+  height: 20rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: -10px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  filter: blur(10px);
+}
+
+/* Стили для кнопок калькулятора */
+/* Стили для кнопок калькулятора */
+.multiply,
+.sum,
+.minus,
+.divide {
+  padding: 10px 20px; /* Отступ вокруг текста кнопок */
+  font-size: 18px; /* Размер шрифта */
+  background-color: #4caf50; /* Цвет фона кнопок */
+  color: #fff; /* Цвет текста кнопок */
+  border: none; /* Убираем границу */
+  border-radius: 5px; /* Закругляем углы кнопок */
+  cursor: pointer; /* Задаем стандартный курсор при наведении */
+  margin: 5px; /* Отступы между кнопками */
+}
+
+/* Стили для кнопок при наведении */
+.multiply:hover,
+.sum:hover,
+.minus:hover,
+.divide:hover {
+  background-color: #45a049; /* Изменяем цвет фона при наведении */
+}
+
+.panel {
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
